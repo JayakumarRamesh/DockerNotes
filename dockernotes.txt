@@ -1,0 +1,39 @@
+													Docker(wrtten in Go)
+Docker registry:
+		Docker registry stores docker images.
+		
+Objects of Docker are Image,Container..etc.													
+Image:
+		An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization.
+
+Container:
+
+		A container is a runnable instance of an image.
+		
+		A container is defined by its image as well as any configuration options you provide to it when you create or start it. When a container is removed, any changes to its state that are not stored in persistent storage disappear.
+
+
+Explaination:
+		
+		Image-----it is like a class in java.
+		Container-----it is like creating an object to that class in java.
+
+		You can create many object for a class.Similarly we can create many container using that one image
+		
+youtube link ==> https://youtu.be/iqqDU2crIEQ
+
+
+command to create an image ==> docker build --tag imagename .(Dockerfilelocation)
+command to create container ==> docker run --name containername imagename(docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0)
+
+docker rmi imagename
+docker rm containername
+docker ps --all 
+docker ps           ==> ps-processes
+docker stop cotainername
+docker start containername
+
+https://docs.docker.com/get-started/part2/
+
+
+
